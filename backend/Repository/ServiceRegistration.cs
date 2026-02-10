@@ -11,7 +11,7 @@ namespace Repository
 {
     public static class ServiceRegistration
     {
-        public static IServiceCollection AddService(this IServiceCollection services)
+        public static IServiceCollection AddRepositoryService(this IServiceCollection services)
         {
 
             services.AddScoped<ITaskRepository, TaskRepository>();
