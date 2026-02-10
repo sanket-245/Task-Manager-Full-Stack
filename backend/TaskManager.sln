@@ -3,20 +3,26 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskManager.API", "TaskManager.API\TaskManager.API.csproj", "{6CA0E5E2-976C-4A63-B72A-CAB7FCE88B2E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskManager.API", "TaskManager.API\TaskManager.API.csproj", "{6CA0E5E2-976C-4A63-B72A-CAB7FCE88B2E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data Models", "Data Models", "{2267DC42-BB64-44AF-BD6E-09EBBEB340D0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data Access", "Data Access", "{F3AD3217-8207-4CD7-AC45-14743DB7083A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repository", "Repository", "{5211D0EF-7715-409B-B6FE-146DFA7D9550}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{6CA0E5E2-976C-4A63-B72A-CAB7FCE88B2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6CA0E5E2-976C-4A63-B72A-CAB7FCE88B2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6CA0E5E2-976C-4A63-B72A-CAB7FCE88B2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6CA0E5E2-976C-4A63-B72A-CAB7FCE88B2E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal
