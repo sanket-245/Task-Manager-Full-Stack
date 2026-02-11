@@ -11,13 +11,13 @@ namespace Repository
 {
     public static class ServiceRegistration
     {
-        public static IServiceCollection AddRepositoryService(this IServiceCollection services)
+        public static void AddRepositoryService(this IServiceCollection services)
         {
 
-            services.AddScoped<ITaskRepository, TaskRepository>();
-            services.AddScoped<IUserRepository, UserRepository>();
+           _=services.AddScoped<ITaskRepository, TaskRepository>().
+            AddScoped<IUserRepository, UserRepository>();
 
-            return services;
+            
         }
     }
 }
