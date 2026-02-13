@@ -1,4 +1,4 @@
-﻿namespace TaskManager.API.DTOs
+﻿namespace Services.DTOs
 {
     public class CreateTaskDTO
     {

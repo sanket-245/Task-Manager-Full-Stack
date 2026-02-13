@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TaskManager.API.DTOs;
+using Services.DTOs;
 
 namespace Services.Services
 {
