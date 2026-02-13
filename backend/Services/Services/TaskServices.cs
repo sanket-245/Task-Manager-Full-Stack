@@ -57,7 +57,7 @@ namespace Services.Services
                 TaskName = dto.TaskName,
                 TaskDescription = dto.TaskDescripion,
                 UserId = dto.UserID,
-                TaskStatusId = new Guid(),
+                TaskStatusId = DataAccess.Enums.TaskStatusEnum.NotStarted,
                 CreatedAt = DateTime.Now,
                 DueDate = dto.TaskDuedate
             };

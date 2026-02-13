@@ -19,11 +19,11 @@ namespace TaskManager.API.Controllers
         /// <returns></returns>
         [HttpGet]
         [Route("/tasks")]
-        public IActionResult GetTAsks( Guid userid)
+        public async Task< IActionResult> GetTasks(Guid userid)
         {
             if(userid != null && userid != Guid.Empty)
             {
-                var TaskResponse = _taskservices.GetAllAsync();    
+                var TaskResponse =  await _taskservices.GetAllAsync();    
                return Ok(TaskResponse);
              
             }
