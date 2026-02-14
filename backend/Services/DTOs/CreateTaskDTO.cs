@@ -2,9 +2,9 @@
 {
     public class CreateTaskDTO
     {
-        public string TaskDescripion {  get; set; }
+        public String TaskDescripion {  get; set; }
 
-        public string TaskName { get; set; }
+        public String TaskName { get; set; }
 
         public Guid UserID { get; set; }
 
