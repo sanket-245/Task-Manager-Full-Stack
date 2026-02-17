@@ -20,26 +20,26 @@ namespace Repository.Repository_Interfaces
         /// </summary>
         /// <param name="taskID"></param>
         /// <returns></returns>
-        Task<DAENT.User?> GetUserByID(Guid taskId);
+        Task<DAENT.User?> GetUserByEmailID(String Email);
         /// <summary>
         /// Adding the User 
         /// </summary>
         /// <param name="task"></param>
         /// <returns></returns>
-        Task AddUserAsync(DAENT.User task);
+        Task AddUserAsync(DAENT.User user);
 
         /// <summary>
         /// Delete User
         /// </summary>
         /// <param name="task"></param>
         /// <returns></returns>
-        Task DeleteUserAsync(DAENT.User task);
+        Task DeleteUserAsync(DAENT.User user);
 
         /// <summary>
         /// Update the User
         /// </summary>
         /// <param name="task"></param>
         /// <returns></returns>
-        Task UpdateUserAsync(DAENT.User task);
+        Task UpdateUserAsync(DAENT.User user);
     }
 }

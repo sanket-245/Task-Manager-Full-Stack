@@ -9,10 +9,10 @@ namespace Services.Services_Interfaces
 {
     public interface IUserServices
     {
-        Task<List<UserResponseDTO>> GetAllUsers();
-        Task<UserResponseDTO?> GetUserByIdAsync(Guid id);
+       //Task<List<UserResponseDTO>> GetAllUsers();
+        Task<UserResponseDTO?> GetUserByEmailAsync(string emailid);
         Task CreateUserAsync(CreateUserDTO dto);
        // Task UpdateStatusAsync(Guid id, UpdateTaskStatusDTO dto);
-        Task DeleteAsync(Guid id);
+       // Task DeleteAsync(Guid id);
     }
 }

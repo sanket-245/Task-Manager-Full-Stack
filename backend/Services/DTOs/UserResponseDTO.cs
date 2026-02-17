@@ -11,5 +11,7 @@ namespace Services.DTOs
         public String UserName;
 
         public String Email;
+
+        public String Password;
     }
 }

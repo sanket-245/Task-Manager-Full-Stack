@@ -37,11 +37,11 @@ namespace Repository.Repositories
         /// </summary>
         /// <param name="userId"></param>
         /// <returns></returns>
-        public async Task<DAENT.User?> GetUserByID(Guid userId)
+        public async Task<DAENT.User?> GetUserByEmailID(string Email)
         {
             var User = new DAENT.User();
 
-            User = await _dbContext.Users.Where(x => x.UserId == userId).FirstOrDefaultAsync();
+            User = await _dbContext.Users.Where(x => x.EmailId == Email).FirstOrDefaultAsync();
 
             return User;
         }
