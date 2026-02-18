@@ -68,7 +68,7 @@ builder.Services.AddSwaggerGen(
                 }
 
         });
-    });ed
+    });
 
 builder.Services.AddRepositoryService();
 builder.Services.Addserviceregistration();
