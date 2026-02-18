@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Services.DTOs;
 using Services.Services_Interfaces;
 
 
 namespace TaskManager.API.Controllers
 {
+    [Authorize]
     public class TasksController : Controller
     {
         private readonly ITaskServices _taskservices;

@@ -21,11 +21,10 @@ namespace TaskManager.API.Controllers
         }
 
         [HttpPost("login")]
-        public IActionResult Login(string email, string password)
+        public async Task<IActionResult> Login(String email, String password)
         {
-            var usersdata = _userServices.GetUserByEmailAsync( email);
-            
-            if (email != "test@test.com" || password != "123")
+            var result = await _userServices.GetAuthenticate(email, password);
+            if (result != true)
             {
                 return Unauthorized();
             }

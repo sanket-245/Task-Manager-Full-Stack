@@ -1,5 +1,6 @@
 ﻿using Repository.Repository_Interfaces;
 using Services.DTOs;
+using Services.Services_Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Services.Services
 {
-    class UserServices
+    class UserServices : IUserServices
     {
         private readonly IUserRepository _userRepository;
         public UserServices(IUserRepository userRepository)
@@ -17,7 +18,7 @@ namespace Services.Services
         }
 
       
-        public async Task<UserResponseDTO?> GetUserByEmailAsync(string emailid)
+        public async Task<UserResponseDTO?> GetUserByEmailAsync(String emailid)
         {
 
             var result = await _userRepository.GetUserByEmailID(emailid);
@@ -50,6 +51,16 @@ namespace Services.Services
             }
 
             return;
+        }
+
+        public async Task<Boolean> GetAuthenticate(String username, String password)
+        {
+            var result = await _userRepository.GetUserByEmailID(username);
+            if (result == null) 
+                return false;
+            if(result.PasswordHash == password)
+                return true;
+            return false;
         }
     }
 }

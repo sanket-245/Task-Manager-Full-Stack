@@ -14,7 +14,9 @@ namespace Services
     {
         public static void Addserviceregistration( this IServiceCollection services)
         {
-            _ = services.AddScoped<ITaskServices, TaskServices>();
+            _ = services.AddScoped<ITaskServices, TaskServices>()
+                .AddScoped<IUserServices, UserServices>();
+               
         }
     }
 }
